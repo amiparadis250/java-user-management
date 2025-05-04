@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/Servelet_lab"/>
+<Context path="/managementsystem">
+    <!-- Basic Context Configuration -->
+    <Parameter name="appName" value="Java Management System" override="false"/>
+    <Parameter name="appVersion" value="1.0" override="false"/>
+    
+    <!-- WatchedResource ensures the application is reloaded when these files change -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <WatchedResource>META-INF/context.xml</WatchedResource>
+    
+    <!-- Reloadable enables hot-reloading of classes -->
+    <Reloadable>true</Reloadable>
+</Context>
